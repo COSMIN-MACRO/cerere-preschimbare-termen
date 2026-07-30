@@ -1,0 +1,59 @@
+===================================================================
+ CERERE PRESCHIMBARE TERMEN SOLUTIONARE (Formular nr. 5 - model nou)
+ Aplicatie desktop - instructiuni
+===================================================================
+
+CE FACE
+-------
+Completeaza automat formularul oficial ONRC "Formular nr. 5" (modelul
+nou, cu sectiunea de amanare/termen/motive) pornind de la:
+  - text lipit (CI, decizie asociat, act constitutiv, print screen ONRC)
+  - sau fisiere trase peste fereastra / incarcate (PDF, Word, imagine).
+Formularul rezultat este PDF EDITABIL: poti bifa/ajusta si scrie motivul
+si direct in cititorul PDF, apoi aplici semnatura digitala.
+
+INSTALARE (o singura data per calculator)
+-----------------------------------------
+1. Python 3 instalat (la instalare bifeaza "Add Python to PATH").
+   Verificare: cmd -> python --version
+2. Dublu-click pe:  INSTALARE_module.bat
+3. (Optional, pentru OCR pe print screen) instaleaza Tesseract OCR:
+   https://github.com/UB-Mannheim/tesseract/wiki
+   Fara Tesseract aplicatia merge normal; doar citirea nr. de dosar
+   dintr-o IMAGINE este dezactivata (poti lipi textul in schimb).
+
+PORNIRE (zilnic)
+----------------
+Dublu-click pe:  Porneste_Aplicatia.bat
+
+SHORTCUT PE DESKTOP
+-------------------
+Varianta automata: dublu-click pe Creeaza_Shortcut_Desktop.bat
+Varianta MANUALA (100% sigura):
+  1. Click dreapta pe Porneste_Aplicatia.bat
+  2. Trimite catre -> Desktop (creeaza comanda rapida)
+  3. Click dreapta pe shortcut -> Proprietati -> Schimba pictograma
+  4. Rasfoire -> alege icon.ico din acest folder -> OK -> Aplicare
+
+RECOMANDARE LOCATIE
+-------------------
+Dezarhiveaza folderul intr-o cale FARA spatii, ex:
+  C:\Downloads\aplicatii\cerere_preschimbare_termen\
+
+CUM SE FOLOSESTE
+----------------
+1. Tab "1. Paste rapid / Import": lipeste textul sau trage fisierele.
+2. Apasa "EXTRAGE DATE AUTOMAT".
+3. Tab "2. Date cerere": verifica campurile galbene (auto-completate),
+   corecteaza ce e nevoie, bifeaza/debifeaza tipul cererii, scrie MOTIVUL.
+4. Apasa "GENEREAZA CEREREA". PDF-ul se salveaza in OUTPUT\<Firma>\ si
+   se deschide automat.
+
+FISIERE
+-------
+app.py                       - aplicatia
+Formular5_nou_blank.pdf      - sablonul oficial (NU-l sterge)
+icon.ico / icon.png          - iconita
+*.bat                        - lansare / instalare / shortcut
+make_shortcut.py             - creare shortcut Desktop
+OUTPUT\                      - aici apar cererile generate
