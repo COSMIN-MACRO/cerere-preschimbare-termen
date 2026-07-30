@@ -30,7 +30,7 @@ Datele se extrag local (fără internet), se completează în formularul PDF ofi
 ## Instalare
 
 ```bash
-git clone https://github.com/<utilizator>/cerere-preschimbare-termen.git
+git clone https://github.com/COSMIN-MACRO/cerere-preschimbare-termen.git
 cd cerere-preschimbare-termen
 pip install -r requirements.txt
 python app.py
